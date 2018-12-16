@@ -1,0 +1,11 @@
+学习目标：Navicat的设计表里，索引的总结与应用
+	复杂sql的编写
+	数据库行级锁和列级锁，悲观锁和乐观锁的理解
+	mycat 工具的使用
+	html css javascript 的编写
+
+扩展知识的学习：impala 
+	          apache kylin
+
+添加外键：alter table employee add foreign key(dno) references dept(did);
+一对多的建表原则：在多的一方的创建外键指向一的一方的主键。

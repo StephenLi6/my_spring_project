@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyBatisTest/MyBatisTest.iml" filepath="$PROJECT_DIR$/MyBatisTest/MyBatisTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyMybatisPractice/MyMybatisPractice.iml" filepath="$PROJECT_DIR$/MyMybatisPractice/MyMybatisPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringDay01/MySpringDay01.iml" filepath="$PROJECT_DIR$/MySpringDay01/MySpringDay01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringDay02/MySpringDay02.iml" filepath="$PROJECT_DIR$/MySpringDay02/MySpringDay02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringDay03AOP/MySpringDay03AOP.iml" filepath="$PROJECT_DIR$/MySpringDay03AOP/MySpringDay03AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringDay03AopAnno/MySpringDay03AopAnno.iml" filepath="$PROJECT_DIR$/MySpringDay03AopAnno/MySpringDay03AopAnno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringDay04AOPTX_XML/MySpringDay04AOPTX_XML.iml" filepath="$PROJECT_DIR$/MySpringDay04AOPTX_XML/MySpringDay04AOPTX_XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringDay04TX_XML/MySpringDay04TX_XML.iml" filepath="$PROJECT_DIR$/MySpringDay04TX_XML/MySpringDay04TX_XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apacheluceneandsolr/apacheluceneandsolr.iml" filepath="$PROJECT_DIR$/apacheluceneandsolr/apacheluceneandsolr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mycrawler_day01/mycrawler_day01.iml" filepath="$PROJECT_DIR$/mycrawler_day01/mycrawler_day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mymavenproject/mymavenproject.iml" filepath="$PROJECT_DIR$/mymavenproject/mymavenproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspringday03_all/myspringday03_all.iml" filepath="$PROJECT_DIR$/myspringday03_all/myspringday03_all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspringmvc_day02/myspringmvc_day02.iml" filepath="$PROJECT_DIR$/myspringmvc_day02/myspringmvc_day02.iml" />
+    </modules>
+  </component>
+</project>

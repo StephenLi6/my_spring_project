@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apacheluceneandsolr" />
+        <module name="MyBatisTest" />
+        <module name="mycrawler_day01" />
+        <module name="MyMybatisPractice" />
+        <module name="MySpringDay01" />
+        <module name="MySpringDay02" />
+        <module name="myspringday03_all" />
+        <module name="MySpringDay03AOP" />
+        <module name="MySpringDay03AopAnno" />
+        <module name="MySpringDay04AOPTX_XML" />
+        <module name="MySpringDay04TX_XML" />
+        <module name="myspringmvc_day02" />
+        <module name="ssm_dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apacheluceneandsolr" target="1.8" />
+      <module name="comtheshy" target="1.5" />
+      <module name="MyBatisTest" target="1.5" />
+      <module name="mycrawler_day01" target="1.8" />
+      <module name="mymavenproject" target="1.8" />
+      <module name="MyMybatisPractice" target="1.5" />
+      <module name="MySpringDay01" target="1.5" />
+      <module name="MySpringDay02" target="1.8" />
+      <module name="myspringday03_all" target="1.8" />
+      <module name="MySpringDay03AOP" target="1.8" />
+      <module name="MySpringDay03AopAnno" target="1.8" />
+      <module name="MySpringDay04AOPTX_XML" target="1.8" />
+      <module name="MySpringDay04TX_XML" target="1.8" />
+      <module name="myspringmvc_day02" target="1.5" />
+      <module name="MySpringMVCDay01" target="1.5" />
+      <module name="ssm_dao" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

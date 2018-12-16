@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/myspringday03_all" />
+    <file type="web" url="file://$PROJECT_DIR$/myspringmvc_day01" />
+    <file type="web" url="file://$PROJECT_DIR$/myspringmvc_day02" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MyMybatisPractice/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisTest/pom.xml" />
+        <option value="$PROJECT_DIR$/MySpringDay01/pom.xml" />
+        <option value="$PROJECT_DIR$/MySpringDay02/pom.xml" />
+        <option value="$PROJECT_DIR$/MySpringDay03AOP/pom.xml" />
+        <option value="$PROJECT_DIR$/MySpringDay03AopAnno/pom.xml" />
+        <option value="$PROJECT_DIR$/MySpringDay04AOPTX_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/MySpringDay04TX_XML/pom.xml" />
+        <option value="$PROJECT_DIR$/MySpringMVCDay01/pom.xml" />
+        <option value="$PROJECT_DIR$/myspringmvc_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/myspringday03_all/pom.xml" />
+        <option value="$PROJECT_DIR$/mycrawler_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/mymavenproject/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/apacheluceneandsolr/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

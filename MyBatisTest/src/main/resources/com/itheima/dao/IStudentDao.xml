@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.IStudentDao">
+    <resultMap id="findStudentCourse" type="student">
+        <id property="sno" column="sno"></id>
+        <result property="sname" column="sname"></result>
+        <result property="sage" column="sage"></result>
+        <result property="ssex" column="ssex"></result>
+        <collection property="list" ofType="Course">
+            <id property="cno" column="cno"></id>
+            <result property="cname" column="cname"></result>
+            <result property="tno" column="tno"></result>
+        </collection>
+    </resultMap>
+
+    <select id="testFindStudentCourse" resultMap="findStudentCourse">
+        select * from student s left join sc on s.sno = sc.sno left
+         join course c on c.cno = sc.cno
+    </select>
+</mapper>

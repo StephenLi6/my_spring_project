@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.IUserDao">
+    <!--配置查询所有-->
+    <select id="findAll" resultType="com.itheima.domain.User">
+        select * from user
+    </select>
+
+    <insert id="saveUser" parameterType="com.itheima.domain.User">
+        <selectKey keyProperty="id" keyColumn="id" resultType="int" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+                   insert into user (username,address,sex,birthday)values (#{username},#{address},#{sex},#{birthday})
+    </insert>
+
+    <update id="update" parameterType="com.itheima.domain.User">
+        update user set username=#{username} ,id = #{id},address = #{address},sex = #{sex},birthday = #{birthday} where id = #{id}
+    </update>
+
+    <delete id="delete"  parameterType="integer">
+        delete from user where id = #{id}
+    </delete>
+
+    <select id="findById" parameterType="integer" resultType="com.itheima.domain.User">
+        select * from user  where id = #{id}
+    </select>
+
+    <select id="findByName" parameterType="string" resultType="com.itheima.domain.User">
+        select * from user where username like '%${value}%'
+    </select>
+
+    <select id="findTotal" resultType="integer">
+        select count(1) from user
+    </select>
+
+    <select id="findRange" parameterType="QueryVo" resultType="com.itheima.domain.User">
+        select * from user where id > #{min} and id &lt;= #{max}
+    </select>
+    
+    <select id="findByUser" parameterType="User" resultType="user" >
+        select * from user
+        <where>
+            <if test="username != null and username != '' ">
+                username = #{username}
+            </if>
+            <if test="address != null">
+                address = #{address}
+            </if>
+        </where>
+    </select>
+
+    <select id="findRange2" parameterType="QueryVo" resultType="User">
+        select * from user
+        <where>
+            <if test="mang != null and mang.size()>0">
+                <foreach collection="mang" open="and id in (" close=")" item="aaa" separator=",">
+                    #{aaa}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="findRange3" parameterType="integer" resultType="User">
+        select * from user
+        <where>
+            <if test="collection != null and collection.size()>0">
+                <foreach collection="collection" open="and id in (" close=")" item="aaa" separator=",">
+                    #{aaa}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="findRange4" parameterType="integer" resultType="User">
+        select * from user
+        <where>
+            <if test="fucktheworld.length != 0">
+                <foreach collection="fucktheworld" open="and id in (" close=")" item="fuck you" separator=",">
+                    #{fuck you}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>

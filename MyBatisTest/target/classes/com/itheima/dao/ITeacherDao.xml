@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.ITeacherDao">
+    <select id="testFindAll" resultType="com.itheima.domain.Teacher">
+        select * frOm teacher t,course c where t.tno = c.tno
+    </select>
+
+    <resultMap id="findAllCourse" type="course">
+        <id property="cno" column="cno"></id>
+        <result property="cname" column="cname"></result>
+        <result property="tno" column="tno"></result>
+        <association property="sc" javaType="sc">
+            <id property="sno" column="sno"></id>
+            <result property="cno" column="cno"></result>
+            <result property="score" column="score"></result>
+        </association>
+    </resultMap>
+
+    <select id="testFindAllCourse" resultMap="findAllCourse">
+        select * from course c ,sc s where c.cno = s.cno
+    </select>
+
+    <resultMap id="findTeacherCourse" type="Teacher">
+        <id property="tno" column="tno"></id>
+        <result property="tname" column="tname"></result>
+        <collection property="list" ofType="Course" >
+            <id property="cno" column="cno"></id>
+            <result property="cname" column="cname"></result>
+            <result property="tno" column="tno"></result>
+        </collection>
+    </resultMap>
+
+    <select id="testFindTeacherCourse" resultMap="findTeacherCourse">
+        select * from teacher t left join course c on t.tno = c.tno
+    </select>
+</mapper>

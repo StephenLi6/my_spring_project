@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="accountService" class="com.theshy.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"></property>
+    </bean>
+
+    <bean id="accountDao" class="com.theshy.dao.impl.IAccountDaoImpl">
+        <property name="runner" ref="runner"></property>
+        <property name="connectionUtils" ref="connectionUtils"></property>
+    </bean>
+
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype"></bean>
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--连接数据库的必备信息-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test1"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value="123"></property>
+    </bean>
+
+    <!-- 配置Connection的工具类 ConnectionUtils -->
+    <bean id="connectionUtils" class="com.theshy.utils.ConnectionUtils">
+        <!-- 注入数据源-->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 配置事务管理器-->
+    <bean id="txManager" class="com.theshy.utils.TransactionManager">
+        <!-- 注入ConnectionUtils -->
+        <property name="connectionUtils" ref="connectionUtils"></property>
+    </bean>
+
+    <aop:config>
+        <aop:pointcut id="pc1" expression="execution(* com.theshy.service.impl.*.*(..))"></aop:pointcut>
+        <aop:aspect id="txAdvice" ref="txManager">
+            <aop:before method="beginTransaction" pointcut-ref="pc1"></aop:before>
+            <aop:after-returning method="commit" pointcut-ref="pc1"></aop:after-returning>
+            <aop:after-throwing method="rollback" pointcut-ref="pc1"></aop:after-throwing>
+            <aop:after method="release" pointcut-ref="pc1"></aop:after>
+        </aop:aspect>
+    </aop:config>
+</beans>

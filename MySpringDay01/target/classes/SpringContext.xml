@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+       <!-- <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" scope="prototype"></bean>
+        <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>-->
+        <!--掃描包的標籤-->
+    <context:component-scan base-package="com.itheima"></context:component-scan>
+
+        <bean id="instanceFactory" class="com.itheima.factory.InstanceFactory"></bean>
+        <bean id="accountServiceByFactory" factory-bean="instanceFactory" factory-method="getAccountService"></bean>
+
+        <bean id="staticFactory" class="com.itheima.factory.StaticFactory" factory-method="getAccountService"></bean>
+
+        <bean id="AccountServiceImplByConstructor" class="com.itheima.service.impl.AccountServiceImplByConstructor">
+            <constructor-arg name="name" value="陳玉虎"></constructor-arg>
+            <constructor-arg name="age" value="22"></constructor-arg>
+            <constructor-arg name="birthday" ref="now"></constructor-arg>
+        </bean>
+    <bean id="now" class="java.util.Date"></bean>
+
+    <bean id="AccountServiceImplBySet" class="com.itheima.service.impl.AccountServiceImplBySet">
+        <property name="name" value="衛生經"></property>
+        <property name="age" value="22"></property>
+        <property name="birthday" ref="now"></property>
+    </bean>
+    
+    <bean id="AccountServiceImpl3" class="com.itheima.service.impl.AccountServiceImpl3">
+        <property name="myStrs">
+            <array>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </array>
+        </property>
+
+        <property name="myMap">
+            <map>
+                <entry key="123">
+                    <value>456</value>
+                </entry>
+                <entry key="abc" value="def"></entry>
+            </map>
+        </property>
+    </bean>
+    </beans>
