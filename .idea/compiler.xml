@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apacheluceneandsolr" />
+        <module name="freemakerdemo" />
         <module name="MyBatisTest" />
         <module name="mycrawler_day01" />
         <module name="MyMybatisPractice" />
@@ -24,6 +25,7 @@
     <bytecodeTargetLevel>
       <module name="apacheluceneandsolr" target="1.8" />
       <module name="comtheshy" target="1.5" />
+      <module name="freemakerdemo" target="1.5" />
       <module name="MyBatisTest" target="1.5" />
       <module name="mycrawler_day01" target="1.8" />
       <module name="mymavenproject" target="1.8" />
