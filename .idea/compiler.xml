@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="activemq" />
         <module name="apacheluceneandsolr" />
         <module name="freemakerdemo" />
         <module name="MyBatisTest" />
@@ -23,6 +24,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="activemq" target="1.5" />
       <module name="apacheluceneandsolr" target="1.8" />
       <module name="comtheshy" target="1.5" />
       <module name="freemakerdemo" target="1.5" />
