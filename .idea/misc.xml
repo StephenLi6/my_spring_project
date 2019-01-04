@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mycasdemo1" />
+    <file type="web" url="file://$PROJECT_DIR$/mycasdemo2" />
     <file type="web" url="file://$PROJECT_DIR$/myspringday03_all" />
     <file type="web" url="file://$PROJECT_DIR$/myspringmvc_day01" />
     <file type="web" url="file://$PROJECT_DIR$/myspringmvc_day02" />
@@ -25,6 +27,9 @@
         <option value="$PROJECT_DIR$/apacheluceneandsolr/pom.xml" />
         <option value="$PROJECT_DIR$/freemakerdemo/pom.xml" />
         <option value="$PROJECT_DIR$/activemq/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/mycasdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/mycasdemo2/pom.xml" />
       </list>
     </option>
   </component>
