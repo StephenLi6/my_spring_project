@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/mycasdemo1" />
     <file type="web" url="file://$PROJECT_DIR$/mycasdemo2" />
+    <file type="web" url="file://$PROJECT_DIR$/mycasdemo3" />
     <file type="web" url="file://$PROJECT_DIR$/myspringday03_all" />
     <file type="web" url="file://$PROJECT_DIR$/myspringmvc_day01" />
     <file type="web" url="file://$PROJECT_DIR$/myspringmvc_day02" />

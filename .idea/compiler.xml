@@ -36,7 +36,7 @@
       <module name="MyBatisTest" target="1.5" />
       <module name="mycasdemo1" target="1.7" />
       <module name="mycasdemo2" target="1.7" />
-      <module name="mycasdemo3" target="1.5" />
+      <module name="mycasdemo3" target="1.7" />
       <module name="mycrawler_day01" target="1.8" />
       <module name="mymavenproject" target="1.8" />
       <module name="MyMybatisPractice" target="1.5" />
