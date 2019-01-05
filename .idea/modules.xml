@@ -15,11 +15,13 @@
       <module fileurl="file://$PROJECT_DIR$/freemakerdemo/freemakerdemo.iml" filepath="$PROJECT_DIR$/freemakerdemo/freemakerdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycasdemo1/mycasdemo1.iml" filepath="$PROJECT_DIR$/mycasdemo1/mycasdemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycasdemo2/mycasdemo2.iml" filepath="$PROJECT_DIR$/mycasdemo2/mycasdemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mycasdemo3/mycasdemo3.iml" filepath="$PROJECT_DIR$/mycasdemo3/mycasdemo3.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycrawler_day01/mycrawler_day01.iml" filepath="$PROJECT_DIR$/mycrawler_day01/mycrawler_day01.iml" />
       <module fileurl="file://$PROJECT_DIR$/mymavenproject/mymavenproject.iml" filepath="$PROJECT_DIR$/mymavenproject/mymavenproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/myspringday03_all/myspringday03_all.iml" filepath="$PROJECT_DIR$/myspringday03_all/myspringday03_all.iml" />
       <module fileurl="file://$PROJECT_DIR$/myspringmvc_day02/myspringmvc_day02.iml" filepath="$PROJECT_DIR$/myspringmvc_day02/myspringmvc_day02.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springsecuritydemo/springsecuritydemo.iml" filepath="$PROJECT_DIR$/springsecuritydemo/springsecuritydemo.iml" />
     </modules>
   </component>
 </project>

@@ -12,6 +12,7 @@
         <module name="MyBatisTest" />
         <module name="mycasdemo1" />
         <module name="mycasdemo2" />
+        <module name="mycasdemo3" />
         <module name="mycrawler_day01" />
         <module name="MyMybatisPractice" />
         <module name="MySpringDay01" />
@@ -23,6 +24,7 @@
         <module name="MySpringDay04TX_XML" />
         <module name="myspringmvc_day02" />
         <module name="springboot" />
+        <module name="springsecuritydemo" />
         <module name="ssm_dao" />
       </profile>
     </annotationProcessing>
@@ -34,6 +36,7 @@
       <module name="MyBatisTest" target="1.5" />
       <module name="mycasdemo1" target="1.7" />
       <module name="mycasdemo2" target="1.7" />
+      <module name="mycasdemo3" target="1.5" />
       <module name="mycrawler_day01" target="1.8" />
       <module name="mymavenproject" target="1.8" />
       <module name="MyMybatisPractice" target="1.5" />
@@ -47,6 +50,7 @@
       <module name="myspringmvc_day02" target="1.5" />
       <module name="MySpringMVCDay01" target="1.5" />
       <module name="springboot" target="1.6" />
+      <module name="springsecuritydemo" target="1.7" />
       <module name="ssm_dao" target="1.5" />
     </bytecodeTargetLevel>
   </component>
